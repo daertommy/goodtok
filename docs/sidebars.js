@@ -20,7 +20,19 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  sidebar: ["welcome"]
+  sidebar: [
+    "welcome",
+    {
+      type: 'category',
+      label: 'Contributing',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        'contributing/starting-in-development-mode'
+      ],
+    },
+  ],
+
 };
 
 module.exports = sidebars;
